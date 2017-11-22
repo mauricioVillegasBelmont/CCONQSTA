@@ -323,40 +323,37 @@ function hologram(index){
 
 
 function photoSlideSet(index){
-	var backPic = undefined; 
-	var nextPic = undefined; 
-	var bp = undefined; 
-	var np = undefined; 
 	var photoSlides = document.getElementsByClassName('galleryItem');
 	if(index > 0){
 		for(var i = index-1;i >= 0;i--){
 			photoSlides[i].classList.remove('backPic','currSlide','nextSlide');
-			photoSlides[i].classList.add('prevSlide');
+			//photoSlides[i].classList.add('prevSlide');
 		}
-		photoSlides[index-1].classList.add('backPic');
+		//photoSlides[index-1].classList.add('backPic');
 	}
 	photoSlides[index].classList.remove('backPic','nextpic','nextSlide','prevSlide');
 	photoSlides[index].classList.add('currSlide');
 	if(index < photoSlides.length-1){
 		for(var j = index+1;j<=photoSlides.length-1;j++){
 			photoSlides[j].classList.remove('nextpic','currSlide','prevSlide');
-			photoSlides[j].classList.add('nextSlide');
+			//photoSlides[j].classList.add('nextSlide');
 		}
-		photoSlides[index+1].classList.add('nextpic');
+		//photoSlides[index+1].classList.add('nextpic');
 	}
-	document.getElementById('sliderRangeControl').value = index;
+	//document.getElementById('sliderRangeControl').value = index;
 }
 
 function gllaryPic(index){
-	var photoSlides = document.getElementsByClassName('galleryItem');
-	if(photoSlides[index].classList.contains('backPic')){
+	//var photoSlides = document.getElementsByClassName('galleryItem');
+	/*if(photoSlides[index].classList.contains('backPic')){
 		photoSlideSet(index);
 	}else if(photoSlides[index].classList.contains('nextpic')){
 		photoSlideSet(index);
 	}else if(photoSlides[index].classList.contains('currSlide')){
 		setModalImg(index);
-		//console.log('setModalImg(index);');
-	}
+	}*/
+	//photoSlideSet(index);
+		setModalImg(index);
 }
 
 document.addEventListener('DOMContentLoaded', function(){
