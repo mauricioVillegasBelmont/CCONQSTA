@@ -5,7 +5,7 @@ var closeModal = document.querySelector('#closeModal');
 //var CurrentPonentePic = document.querySelector('#ponentesInfo #biography img');
 
 var sedePic = ['001', '002', '003', '004', '005', '006'];
-var slideElement = ['SC-01', 'SC-02', 'SC-03', 'SC-04', 'SC-05', 'SC-06', 'SC-07', 'SC-08', 'SC-09'];
+var slideElement = ['SC-00','SC-01', 'SC-02', 'SC-03', 'SC-04', 'SC-05', 'SC-06', 'SC-07', 'SC-08', 'SC-09', 'SC-10', 'SC-11', 'SC-12', 'SC-13', 'SC-14', 'SC-15', 'SC-16'];
 
 
 var img = document.getElementById('sedeImg');

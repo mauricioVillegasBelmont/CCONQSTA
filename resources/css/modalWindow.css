@@ -1,12 +1,11 @@
 /* The Modal (background) */
 .modal {
-    position: relative;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 10000000; /* Sit on top */
+    padding-top: 12vh; /* Location of the box */
     left: 0;
-    top: 0;
+    top:  0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -15,25 +14,32 @@
 }
 
 .modal-content {
-    position: relative;
+	position: absolute;
+	top: 15vh;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
     display: table;
-    top:7%;
     background-color: #fefefe;
-    margin: auto;
     padding: 15px;
     border: 1px solid #888;
-    max-width: 1220px;
-    width: 80%;
+    width: auto;
+    max-width: 100vh;
     height: auto;
-    max-height: 80%;
-    overflow-y: hidden;
+    max-height: 100vh;
+    overflow-y: auto;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-   border-radius: 10px 10px 10px 10px;
             border-radius: 10px 10px 10px 10px;
 }
 
 .modal-content img{
-    width: calc(100% - 58px);
+	object-fit: contain;
+	object-position: center;
+    max-width: calc(100% - 58px);
+	height: auto;
+	max-height: 100vh;
     margin: 0 auto;
 }
 /* The Close Button */
