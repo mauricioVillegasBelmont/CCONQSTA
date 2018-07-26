@@ -24,8 +24,6 @@ function activate(){
 	sliderRangeControl.oninput = function(){
 		photoSlideSet(parseInt(sliderRangeControl.value));
 	}
-	
-	
 	photoSlideSet(0);
 }
 
@@ -42,7 +40,6 @@ function displayAgenda(index){
     var agendaButton = document.querySelectorAll('#agendaButtons .holoBtn');
     
     if(index > 0){
-        
         for(var i = index-1;i >= 0;i--){
             
             if(i != -1){
@@ -70,32 +67,6 @@ function displayAgenda(index){
         }
     }
 }
-
-/*function introVideo(index){
-    var introVideoElement = document.getElementById('introVideo');
-    var button = document.getElementById('introVideoMute');
-    if(index == 1){
-        introVideoElement.muted = false;
-        introVideoElement.play();
-        
-    }else{
-        introVideoElement.currentTime = 0;
-        introVideoElement.muted = true;
-        introVideoElement.pause();
-    }
-    button.classList.add('mute');
-}
-function introVideoVolume(button){
-    var introVideoElement = document.getElementById('introVideo');
-    
-    if (introVideoElement.muted == false) {    
-        introVideoElement.muted = true;
-        button.classList.remove('mute');
-    } else {
-        introVideoElement.muted = false;
-        button.classList.add('mute');
-    }
-}*/
 
 
 function videoMemoria(index){
@@ -168,6 +139,9 @@ function spaceRunVideoVolume(button){
     }
 
 }
+
+
+
 var currentBoom;
 function boomSrc(selector){
 	var boom = ['boom01','boom02','boom03','boom04','boom05','boom06','boom07','boom08','boom09'];
@@ -284,11 +258,9 @@ function setCurrent(elem,index){
     	menuButton[j].classList.remove('current');
 	}
     menuButton[index].classList.add('current')
-	
     slideIndex = index;
     parralax();
     hologram(index);
-    //introVideo(index);
 	videoMemoria(index);
     spaceRunVideo(index);
 
@@ -327,32 +299,18 @@ function photoSlideSet(index){
 	if(index > 0){
 		for(var i = index-1;i >= 0;i--){
 			photoSlides[i].classList.remove('backPic','currSlide','nextSlide');
-			//photoSlides[i].classList.add('prevSlide');
 		}
-		//photoSlides[index-1].classList.add('backPic');
 	}
 	photoSlides[index].classList.remove('backPic','nextpic','nextSlide','prevSlide');
 	photoSlides[index].classList.add('currSlide');
 	if(index < photoSlides.length-1){
 		for(var j = index+1;j<=photoSlides.length-1;j++){
 			photoSlides[j].classList.remove('nextpic','currSlide','prevSlide');
-			//photoSlides[j].classList.add('nextSlide');
 		}
-		//photoSlides[index+1].classList.add('nextpic');
 	}
-	//document.getElementById('sliderRangeControl').value = index;
 }
 
 function gllaryPic(index){
-	//var photoSlides = document.getElementsByClassName('galleryItem');
-	/*if(photoSlides[index].classList.contains('backPic')){
-		photoSlideSet(index);
-	}else if(photoSlides[index].classList.contains('nextpic')){
-		photoSlideSet(index);
-	}else if(photoSlides[index].classList.contains('currSlide')){
-		setModalImg(index);
-	}*/
-	//photoSlideSet(index);
 		setModalImg(index);
 }
 
