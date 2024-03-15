@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
     <link rel="stylesheet" type="text/css" href="resources/css/weather-icons.css">
     <link rel="stylesheet" type="text/css" href="resources/css/weatherStyle.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/modalWindow.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/css/modalWindow.css">
     <link rel="stylesheet" type="text/css" href="resources/css/gallery.css">
 </head>
 
@@ -21,20 +21,20 @@
         <div id="body" class="">
             <section id="portada">
                 <div id="videoBG">
-                    <video id="videoBGPlayer" style="opacity:1;" autoplay loop>
-                        <source src="https://appscmspro.s3.amazonaws.com/videomemoria.mp4" type="video/mp4"> 
-                    </video> 
-                    <img id="saberMas" class="fix" src="resources/img/masInfoBttn-01.svg">  
+                    <video id="videoBGPlayer" style="opacity:1;" playsinline autoplay loop muted>
+                        <source src="https://appscmspro.s3.amazonaws.com/videomemoria.mp4" type="video/mp4">
+                    </video>
+                    <img id="saberMas" class="fix" src="resources/img/masInfoBttn-01.svg">
                 </div>
             </section>
             <section id="videomemo">
 				<div class="videoWrapper holo noWrap waitForDisplay startDisabled" style="">
                     <video id="videomemoria" autoplay loop>
-                        <source src="https://appscmspro.s3.amazonaws.com/videomemoria.mp4" type="video/mp4"> 
+                        <source src="https://appscmspro.s3.amazonaws.com/videomemoria.mp4" type="video/mp4">
                     </video>
                     <div class="BtnWrapper">
-                    	<input id="videomemoriaPlay" type="button" class="playButton vidBtn round pause" onclick="videoPause(this, videomemoria)" style="top:5px; right:5px;"> 
-                    	<input id="introVideoMute" type="button" class="muteButton vidBtn round mute" onclick="videoMemoriaVolume(this)" style="top:90px; right:5px;"> 
+                    	<input id="videomemoriaPlay" type="button" class="playButton vidBtn round pause" onclick="videoPause(this, videomemoria)" style="top:5px; right:5px;">
+                    	<input id="introVideoMute" type="button" class="muteButton vidBtn round mute" onclick="videoMemoriaVolume(this)" style="top:90px; right:5px;">
                     </div>
                 </div>
             </section>
@@ -42,9 +42,9 @@
                 <div class="slideWrapper h100">
                     <div class="videoWrapper holo noWrap waitForDisplay startDisabled" style="height:auto; margin-bottom:10px;">
                         <video id="spaceRunVideo" loop muted>
-                            <source src="resources/video/SapceRun_V10.mp4" type="video/mp4"> 
+                            <source src="resources/video/SapceRun_V10.mp4" type="video/mp4">
                         </video>
-						<input id="spaceRunMute" type="button" class="muteButton vidBtn round mute" onclick="spaceRunVideoVolume(this)" style="top:5px; right:5px;"> 
+						<input id="spaceRunMute" type="button" class="muteButton vidBtn round mute" onclick="spaceRunVideoVolume(this)" style="top:5px; right:5px;">
 						<input id="boomerangBtn" type="button" class="round vidBtn" onclick="boomerangActive()">
 						<div id="boomerangsBtnWrapper" class="floatLayout">
 							<input id="" type="button" class="round vidBtn bomerangElement" onclick="boomSrc(0)">
@@ -57,8 +57,8 @@
 							<input id="" type="button" class="round vidBtn bomerangElement" onclick="boomSrc(7)">
 							<input id="" type="button" class="round vidBtn bomerangElement" onclick="boomSrc(8)">
 						</div>
-                        	
-                        
+
+
                     </div>
                     <div class="videoWrapper holo waitForDisplay startDisabled" style="height:auto;">
                         <div class="holoDContent col">
